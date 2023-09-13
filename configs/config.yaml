@@ -1,0 +1,17 @@
+run_title: ''
+
+seed: 777
+
+compute_infinite_width: True
+
+n_experiments: 10
+
+use_test_sample: True
+n_test: 10000
+
+# @package _global_
+defaults:
+  - hyperparams: default
+  - target_function: poly
+  - activation: poly
+  - _self_

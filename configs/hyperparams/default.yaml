@@ -1,0 +1,11 @@
+
+
+d: 20
+n: 100
+
+sigma_z: 0.2
+lmbd: 1.
+
+sigma_W2: 0.5
+
+N_width: 300  # does not matter for infinite case

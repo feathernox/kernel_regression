@@ -1,0 +1,2 @@
+kind: 'poly'
+coef: [0, 1, 1, 0.5, 0.05]  # Hu & Lu 2022 example
