@@ -1,0 +1,14 @@
+job:
+  chdir: True
+run:
+  dir: ${location.out_root_dir}/${oc.env:USER}_${now:%Y-%m-%d_%H-%M-%S}_${hydra:job.config_name}_${run_title}
+sweep:
+  dir: ${location.out_root_dir}/${oc.env:USER}_${now:%Y-%m-%d_%H-%M-%S}_${run_title}
+  subdir: ${hydra.job.num}__d_${hparams.d}_n_${hparams.n}
+mode: MULTIRUN
+sweeper:
+  params:
+    run_title: 'hu_lu_delta_K_3'
+    hparams: "{d: 10, n:30},{d: 20, n:60},{d: 50, n:150},{d: 100, n:300},{d: 200, n:600},{d: 500, n:1500},{d: 1000, n:3000},{d: 2000, n:6000}"
+    hparams.sigma_W2: 0.
+    hparams.lmbd: 1e-4

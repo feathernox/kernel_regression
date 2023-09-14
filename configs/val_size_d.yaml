@@ -4,7 +4,7 @@ seed: 777
 
 compute_infinite_width: True
 
-n_experiments: 10
+n_experiments: 20
 
 use_test_sample: True
 n_test: 10000
@@ -15,5 +15,5 @@ defaults:
   - hparams: default
   - target_function: hu_lu
   - activation: hu_lu
-  - hydra: overrides
+  - hydra: val_size_d
   - _self_

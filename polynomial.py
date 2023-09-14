@@ -76,7 +76,6 @@ def classic_poly_mul_jit(classic_coef_a, classic_coef_b):
     return res_coef
 
 
-
 def classic_poly_1d_rescale(classic_coef, scale):
     # in case we have p(x) and want p'(x) = p(scale * x)
     n_coef = len(classic_coef)

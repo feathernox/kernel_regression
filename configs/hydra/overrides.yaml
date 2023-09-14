@@ -1,0 +1,7 @@
+job:
+  chdir: True
+run:
+  dir: ${location.out_root_dir}/${oc.env:USER}_${now:%Y-%m-%d_%H-%M-%S}_${hydra:job.config_name}_${run_title}
+sweep:
+  dir: ${location.out_root_dir}/${oc.env:USER}_${now:%Y-%m-%d_%H-%M-%S}_${run_title}
+  subdir: ${hydra:job.config_name}_${hydra.job.num}

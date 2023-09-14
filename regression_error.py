@@ -2,7 +2,7 @@ import jax.numpy as np
 from polynomial import *
 
 
-def compute_krr_mse_poly_infinite(X_train, g_fn_coef, xi_weights, activation_coef, learned_weights):
+def mse_test_poly_infinite(X_train, g_fn_coef, xi_weights, activation_coef, learned_weights):
     dimension = X_train.shape[1]
     total_error = classic_poly_dsphere_1c_expectation(
         poly_square(g_fn_coef), dimension)  # first component, g^2
